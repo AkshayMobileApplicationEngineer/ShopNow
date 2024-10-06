@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/No_item_01"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/item_txt_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/b"/>
+
+            <TextView
+                android:id="@+id/txt_item_No"
+                android:layout_toRightOf="@id/item_01"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iphone 16 Max Pro+"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/txt_price_rate"
+                android:layout_below="@id/txt_item_No"
+                android:paddingStart="20dp"
+                android:layout_toRightOf="@id/item_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹8354/-"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/txt_pricesaved"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/txt_price_rate"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/item_01"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:textSize="12dp"
+                android:paddingEnd="10dp"
+                android:background="#A1EFFFEF"
+                android:fontFamily="@font/roboto"
+                android:textColor="#212221"
+                android:text="Saved the your " />
+
+            <TextView
+                android:id="@+id/sold_by_01"
+                android:layout_below="@id/txt_pricesaved"
+                android:paddingStart="20dp"
+                android:layout_toRightOf="@id/item_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sold by: "
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:id="@+id/sold_by_02"
+                android:layout_below="@id/txt_pricesaved"
+                android:layout_toRightOf="@id/sold_by_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Karbon Company "
+                android:textSize="12dp"
+                android:fontFamily="@font/roboto"/>
+            <LinearLayout
+                android:id="@+id/line_dreaw_01"
+                android:layout_toRightOf="@id/txt_pricesaved"
+                android:layout_below="@id/txt_price_rate"
+                android:layout_width="120dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_cart_qnty"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/minus_decrements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:id="@+id/number_sysmbols"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="10"
+                    android:layout_margin="1dp"
+                    android:background="#ffffff"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/plus_increments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/txt_View_id_02"
+            android:layout_below="@+id/item_txt_01"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#BAB4B4"
+            android:layout_marginBottom="4dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

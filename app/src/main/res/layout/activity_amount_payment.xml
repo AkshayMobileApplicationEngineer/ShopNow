@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_body"
+    android:layout_height="match_parent"
+    tools:context=".Amount_payment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/header_design"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C80303">
+
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="#00000000"
+            android:text="Payment"
+            android:textColor="#ffffff"
+            android:drawableStart="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"/>
+
+
+
+
+
+    </RelativeLayout>
+    <!--Header End-->
+
+    <LinearLayout
+        android:id="@+id/Payment_details"
+        android:layout_below="@+id/header_design"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_body2"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingStart="50dp"
+            android:layout_weight="1"
+            android:text="Amount Payables  :"
+            android:textStyle="bold"
+            android:textColor="#2C28C3"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="₹ 9999"
+            android:textStyle="bold"
+            android:textColor="#2C28C3"
+            android:textSize="16sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Digial_wallets"
+        android:layout_below="@+id/Payment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_body2"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/digital_walllets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="DIGITAL WALLET"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/digital_type"
+            android:layout_below="@+id/digital_walllets"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Wallets, R-One , GiftCard..."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/digita_balance"
+            android:layout_below="@+id/digital_walllets"
+            android:layout_toRightOf="@+id/digital_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Check Balance"
+            android:textSize="12dp"
+            android:textAlignment="textEnd"
+            android:textColor="#2C28C3"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Digial_wallets_emi"
+        android:layout_below="@+id/Digial_wallets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_body2"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/allets_emi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="DIGITAL WALLET"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"/>
+
+
+
+        <RadioButton
+            android:id="@+id/emi_radio"
+            android:layout_below="@+id/allets_emi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit Card EMI"
+            android:textSize="12dp"
+            android:drawableEnd="@drawable/cardit"
+            android:paddingEnd="10dp"
+            android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/wallets_card"
+        android:layout_below="@+id/Digial_wallets_emi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_body2"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/wallets_digital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text=" WALLET"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/firstpayment_opt"
+            android:layout_below="@+id/wallets_digital"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_online_pymt"
+            android:layout_height="wrap_content">
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/payment_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#00FFFFFF"
+                android:drawableStart="@drawable/mobilwik"
+                android:drawablePadding="50dp"
+                android:text=" MobiKwik"
+                />
+
+            <TextView
+                android:id="@+id/paynow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:text="Pay Now"
+                android:textColor="#2C28C3" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+                android:id="@+id/online_payment_opt_2"
+            android:layout_below="@+id/firstpayment_opt"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_online_pymt"
+        android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/payment_online_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#00FFFFFF"
+                android:drawableStart="@drawable/phonepe"
+                android:drawablePadding="50dp"
+                android:text=" Phonepe"
+                />
+
+            <TextView
+                android:id="@+id/paynow_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:text="Pay Now"
+                android:textColor="#2C28C3" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/online_payment_opt_3"
+            android:layout_below="@+id/online_payment_opt_2"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_online_pymt"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/payment_online_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#00FFFFFF"
+                android:drawableStart="@drawable/google_pay_icon"
+                android:drawablePadding="50dp"
+                android:text=" Google Pay"
+                />
+
+            <TextView
+                android:id="@+id/paynow_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:text="Pay Now"
+                android:textColor="#2C28C3" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--Bottom Bar -->
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btn_payment_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_payment"
+        android:fontFamily="@font/roboto"
+        android:text="PAYMENT"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+</RelativeLayout>

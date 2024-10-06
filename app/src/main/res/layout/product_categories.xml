@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_brand_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logoplay"/>
+        <TextView
+            android:id="@+id/logoName"
+            android:layout_below="@id/item_brand_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+</RelativeLayout>

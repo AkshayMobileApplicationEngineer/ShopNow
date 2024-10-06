@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF6F6"
+    tools:context=".DashbordActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btoommmmm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btoommmmm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#C80303"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:src="@drawable/iconmonstr_home_7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/categories_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/fg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Account_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/account"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/baseline_add_shopping_cart_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Notification_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/notification"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
